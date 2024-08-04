@@ -11,5 +11,4 @@ for filename in os.listdir(directory):
         df = pd.read_csv(file_path)
         combined_df = pd.concat([combined_df, df], ignore_index=True)
 
-# Birleştirilmiş DataFrame'i bir file dosyasına yazma
 combined_df.to_csv('full_data.csv', index=False)
